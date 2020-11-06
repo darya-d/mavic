@@ -10,6 +10,5 @@ Thumbs.db
 .vscode/
 build/
 node_modules/
-scss/
-gulp/
 layout/
+scss/
