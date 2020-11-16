@@ -21,14 +21,18 @@
     @extend %ubuntu-medium;
   }
   &__btn {
-    background-color: transparent;
     padding: 6px 28px;
     margin-right: 8px;
     text-transform: uppercase;
     cursor: pointer;
     border: 1px solid #fff;
     border-radius: 3px;
+    background-color: transparent;
     color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: #1c1c1c;
+    }
   }
   &__phone {
     @extend %ubuntu-bold;
