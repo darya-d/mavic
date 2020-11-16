@@ -1,7 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  min-width: 320px;
+  overflow-x: hidden;
   @extend %ubuntu-light;
   font-size: 17px;
   line-height: 26px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.page-section {
+  position:  relative;
+  min-height: 100vh;
+  padding: 74px 0 50px;
+  background: url("../img/page-bg.webp") no-repeat top center;
+  background-size: cover;
+}
+
+.scroll__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 13px 0 30px;
+  text-align: center;
 }
 
 .title {
