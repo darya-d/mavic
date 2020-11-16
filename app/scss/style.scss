@@ -3,7 +3,47 @@
 @import "fonts";
 @import "global";
 
+.header {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 30px;
+  right: 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 15px;
+    @extend %ubuntu-medium;
+  }
+  &__btn {
+    background-color: transparent;
+    padding: 6px 28px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #222;
+    border-radius: 3px;
+    color: #222;
+  }
+  &__phone {
+    @extend %ubuntu-bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 
+.menu {
+  &__list-item {
+    display: inline-block;
+    &:not(:first-child) {
+      padding-left: 20px;
+    }
+  }
+}
 
 
 @import "media";
