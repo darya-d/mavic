@@ -56,7 +56,7 @@ gulp.task('js', function(){
 gulp.task('browser-sync', function() {
   browserSync.init({
       server: {
-          baseDir: "app/"
+        baseDir: "app/"
       }
   });
 });
@@ -80,10 +80,10 @@ gulp.task('export', function(){
 
 gulp.task('watch', function(){
   gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
-  gulp.watch('app/*.html', gulp.parallel('html'))
-  gulp.watch('app/js/*.js', gulp.parallel('script'))
+  gulp.watch('app/*.html', gulp.parallel('html'));
+  gulp.watch('app/js/*.js', gulp.parallel('script'));
 });
 
-gulp.task('build', gulp.series('clean', 'export'))
+gulp.task('build', gulp.series('clean', 'export'));
 
-gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('css', 'scss', 'js', 'browser-sync', 'watch'));
