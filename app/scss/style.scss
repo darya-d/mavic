@@ -46,5 +46,39 @@
   }
 }
 
+.top {
+  display: flex;
+  align-items: flex-end;
+  background-image: url('../img/top-bg.webp');
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 25px;
+    @extend %sf-semibold;
+    font-size: 96px;
+    line-height: 115px;
+  }
+  &__text {
+    margin: 25px 0 35px;
+    max-width: 325px;
+  }
+  &__social-item {
+    display: inline-block;
+    margin: 0 25px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  &__social-link {
+    opacity: .5;
+    transition: all .2s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 
 @import "media";
