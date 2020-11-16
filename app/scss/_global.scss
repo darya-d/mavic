@@ -1,0 +1,13 @@
+body {
+  @extend %ubuntu-light;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.title {
+  @extend %sf-regular;
+  font-size: 44px;
+  line-height: 53px;
+  margin-bottom: 55px;
+  padding-left: 25px;
+}
