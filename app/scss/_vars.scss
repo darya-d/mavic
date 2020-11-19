@@ -1,10 +1,12 @@
+// Vars
+$color-white: #fff;
+$color-bg: #001716;
 
 
 %sf-regular {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400;
 }
-
 %sf-semibold {
   font-family: 'SFProDisplay-Semibold', sans-serif;
   font-weight: 600;
@@ -14,12 +16,10 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
-
 %ubuntu-medium{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
-
 %ubuntu-bold{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 600;

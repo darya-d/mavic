@@ -14,8 +14,8 @@ body {
   @extend %ubuntu-light;
   font-size: 17px;
   line-height: 26px;
-  color: #fff;
-  background-color: #001716;
+  color: $color-white;
+  background-color: $bgcolor;
 }
 
 a {
@@ -59,9 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
+  margin-bottom: 55px;
+  padding-left: 25px;
   @extend %sf-regular;
   font-size: 44px;
   line-height: 53px;
-  margin-bottom: 55px;
-  padding-left: 25px;
 }
