@@ -15,7 +15,7 @@ body {
   font-size: 17px;
   line-height: 26px;
   color: $color-white;
-  background-color: $bgcolor;
+  background-color: $color-bg;
 }
 
 a {
@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   margin-bottom: 55px;
   padding-left: 25px;
+  padding-top: 100px;
   @extend %sf-regular;
   font-size: 44px;
   line-height: 53px;
