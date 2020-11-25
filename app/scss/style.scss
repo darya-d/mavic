@@ -86,6 +86,8 @@
   }
 }
 
+
+// *Description
 .description {
   &__inner {
     display: flex;
@@ -157,6 +159,57 @@
     right: 65px;
   }
 } 
+
+
+// *Benefits
+.benefits {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 100px;
+  }
+  &__number {
+    margin-right: 10px;
+    font-size: 36px;
+    line-height: 41px;
+    @extend %ubuntu-bold;
+  }
+  &__img {
+    position: relative;
+    margin-right: 32px;
+    &::before {
+      content:  "";
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 195px;
+      height: 130px;
+      border: 2px solid $color-white;
+      // z-index: -1;
+    }
+  }
+  &__info {
+    width: 300px;
+  }
+  &__info-title {
+    width: 137px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 24px;
+    @extend %ubuntu-bold;
+  }
+  &__info-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
 
 
 @import "media";
