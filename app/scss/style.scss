@@ -116,6 +116,11 @@
   &__slider {
     max-width: 560px;
   }
+  &__slider-img {
+    max-width: 560px;
+    width: 100%;
+    max-height: 300px;
+  }
 }
 
 .slider-btn {
@@ -128,6 +133,7 @@
   cursor: pointer;
   z-index: 5;
   stroke: 0;
+  outline: none;
   transition: all .2s;
   svg {
     stroke: $color-black;
