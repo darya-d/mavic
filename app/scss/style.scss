@@ -8,8 +8,11 @@
   position: fixed;
   z-index: 10;
   left: 0;
-  top: 30px;
   right: 0;
+  top: 0;
+  padding: 20px 0;
+  background-color: rgba(0,0,0,.5);
+
   &__inner {
     display: flex;
     justify-content: space-between;
