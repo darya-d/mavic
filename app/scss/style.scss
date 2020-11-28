@@ -332,4 +332,46 @@
 }
 
 
+// *Questions
+.questions {
+  &__items {
+    max-width: 757px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+  &__item {
+    max-width: 690px;
+    background-color: rgba(0,0,0,.3);
+  }
+  &__item-title {
+    padding: 20px 10px 20px 40px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-medium;
+    color: rgba($color-white, .8);
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: url('../img/accordion-arrow.svg');
+      position: absolute;
+      width: 72px;
+      height: 67px;
+      right: -72px;
+      top: 0;
+      background-color: $color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__item-text {
+    padding: 0px 5px 75px 40px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
 @import "media";
