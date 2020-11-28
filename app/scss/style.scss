@@ -259,5 +259,77 @@
 }
 
 
+// *Specification
+.specification {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+  }
+  &__item-center {
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+  &__box {
+    position: relative;
+    margin-top: 10px;
+    width: 280px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
+  }
+  &__box-2 {
+    margin-top: 140px;
+  }
+  &__box-4 {
+    margin-top: 160px;
+  }
+  &__box-1::before {
+    width: 229px;
+    height: 115px;
+    left: 225px;
+    top: 25px;
+    background-image: url('../img/pointer-1.svg');
+  }
+  &__box-2::before {
+    width: 350px;
+    height: 115px;
+    left: 235px;
+    top: -60px;
+    background-image: url('../img/pointer-2.svg');
+  }
+  &__box-3::before {
+    width: 258px;
+    height: 115px;
+    right: 320px;
+    top: 20px;
+    background-image: url('../img/pointer-3.svg');
+  }
+  &__box-4::before {
+    height: 115px;
+    width: 245px;
+    right: 230px;
+    top: -65px;
+    background-image: url('../img/pointer-4.svg');
+  }
+  &__box-title {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-bold;
+  }
+  &__box-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    @extend %ubuntu-medium;
+  }
+}
+
 
 @import "media";
