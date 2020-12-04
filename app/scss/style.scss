@@ -12,7 +12,6 @@
   top: 0;
   padding: 20px 0;
   background-color: rgba(0,0,0,.4);
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -54,6 +53,9 @@
     display: inline-block;
     &:not(:first-child) {
       padding-left: 20px;
+    }
+    &.active {
+      text-decoration: underline;
     }
   }
   &__list-phone {
