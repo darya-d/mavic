@@ -16,7 +16,10 @@ $(function(){
   $('#fullpage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
-    sectionSelector: '.page-section'
+    sectionSelector: '.page-section',
+    scrollOverflow: true,
+    anchors: ['top', 'description', 'benefits', 'specification', 'questions', 'contacts'],
+    menu: '#header__nav',
   });
   
 });
